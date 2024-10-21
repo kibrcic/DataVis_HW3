@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Me</h1>
+        <p>If you'd like to get in touch, feel free to reach out through any of the following methods:</p>
+        <ul>
+            <li><strong>Email:</strong> your.email@example.com</li>
+            <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a></li>
+            <li><strong>Instagram:</strong> <a href="https://www.instagram.com/yourprofile" target="_blank">instagram.com/yourprofile</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Name | <a href="index.html">Home</a> | <a href="about-me.html">About Me</a> | <a href="contact.html">Contact</a></p>
+    </footer>
+
+</body>
+</html>
