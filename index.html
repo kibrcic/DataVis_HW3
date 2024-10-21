@@ -4,14 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background-color: #2C3E50;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #f39c12;
+        }
+        section {
+            padding-top: 60px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #2C3E50;
+            font-size: 36px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .intro img {
+            max-width: 200px;
+            width: 100%;
+            border-radius: 50%;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .intro img:hover {
+            transform: scale(1.05);
+        }
+        .intro p {
+            margin-top: 20px;
+            max-width: 800px;
+        }
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #f39c12;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a.button:hover {
+            background-color: #e67e22;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 10px;
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is my personal website where I share my projects and interests.</p>
-    
-    <p>Learn more about me and my hobbies <a href="second-page.html">here</a>.</p>
-    
-    <img src="PhotoKiara.jpg" alt="kiarabrcic Image">
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="second-page.html">About Me</a>
+        </nav>
+    </header>
 
+    <section>
+        <h1>Welcome to My Website!</h1>
+        <div class="intro">
+            <!-- Add your picture here -->
+            <img src="PhotoKiara.jpg" alt="kiarabrcic Image">
+
+            <p>This is my personal website where I share my projects and interests. Learn more about my hobbies, background, and field hockey journey in Argentina.</p>
+
+            <p>Learn more about me and my hobbies <a class="button" href="second-page.html">here</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Personal Website</p>
+    </footer>
 </body>
 </html>
