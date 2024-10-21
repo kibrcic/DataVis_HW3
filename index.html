@@ -1,126 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Website</title>
+    
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Welcome to My Website</title> <!-- Title of the webpage displayed in the browser tab -->
+
     <style>
+        /* General styling for the entire webpage */
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
+            font-family: 'Arial', sans-serif; /* Sets the font family */
+            margin: 0; 
             padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
+            background-color: #f7f7f7; /* Light gray background color */
+            color: #333; /* Text color set to dark gray */
         }
+
+        /* Styling for the header */
         header {
-            background-color: #2C3E50;
-            padding: 10px 0;
-            text-align: center;
-            color: white;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
+            background-color: #2C3E50; /* Dark background for the header */
+            padding: 10px 0; /* Padding at the top and bottom */
+            text-align: center; /* Center the text in the header */
+            color: white; /* White text color */
+            position: fixed; /* Fixes the header at the top */
+            width: 100%; /* Makes the header span the full width of the page */
+            top: 0; /* Positions the header at the top of the page */
+            z-index: 1000; /* Ensures the header stays on top of other content */
         }
+
+        /* Styling for navigation links inside the header */
         header nav a {
-            margin: 0 15px;
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            transition: color 0.3s;
+            margin: 0 15px; /* Spacing between the links */
+            color: white; /* White text color for links */
+            text-decoration: none; /* Removes underline from links */
+            font-size: 18px; /* Sets font size */
+            transition: color 0.3s; /* Smooth color transition on hover */
         }
+
+        /* Hover effect for navigation links */
         header nav a:hover {
-            color: #f39c12;
+            color: orange; /* Changes color to orange when hovered */
         }
+
+        /* Styling for the main section of the page */
         section {
-            padding-top: 60px;
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-            text-align: center;
+            padding-top: 60px; /* Adds space at the top to compensate for the fixed header */
+            max-width: 1200px; /* Sets a maximum width for the section */
+            margin: auto; /* Centers the content horizontally */
+            padding: 20px; /* Adds padding inside the section */
+            text-align: center; /* Centers the text */
         }
+
+        /* Styling for headings */
         h1 {
-            color: #2C3E50;
-            font-size: 36px;
+            color: #2C3E50; /* Dark blue text color */
+            font-size: 36px; /* Sets font size */
         }
+
+        /* General styling for paragraphs */
         p {
-            font-size: 18px;
-            line-height: 1.6;
+            font-size: 18px; /* Sets font size */
+            line-height: 1.6; 
         }
+
+        /* Styling for the introduction section */
         .intro {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            display: flex; /* Uses flexbox for layout */
+            flex-direction: column; /* Aligns items in a column */
+            align-items: center; /* Centers the items horizontally */
         }
+
+        /* Styling for the image inside the intro */
         .intro img {
-            max-width: 200px;
-            width: 100%;
-            border-radius: 50%;
-            margin-top: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
+            max-width: 200px; /* Limits the maximum width */
+            width: 100%; /* Makes the image responsive */
+            border-radius: 50%; /* Makes the image circular */
+            margin-top: 20px; /* Adds space above the image */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect to the image */
+            transition: transform 0.3s; /* Smooth transition for image scaling on hover */
         }
+
+        /* Hover effect for the image */
         .intro img:hover {
-            transform: scale(1.05);
+            transform: scale(1.05); /* Slightly enlarges the image on hover */
         }
+
+        /* Styling for paragraphs inside the intro */
         .intro p {
-            margin-top: 20px;
-            max-width: 800px;
+            margin-top: 20px; /* Adds space above the paragraphs */
+            max-width: 800px; /* Limits the width of the paragraphs */
         }
+
+        /* Styling for the button */
         a.button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 20px;
-            background-color: #f39c12;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            display: inline-block; /* Makes the link behave like a button */
+            padding: 10px 20px; /* Adds padding inside the button */
+            margin-top: 20px; /* Adds space above the button */
+            background-color: #f39c12; /* Sets button background color */
+            color: white; /* White text color */
+            text-decoration: none; /* Removes underline from the button link */
+            border-radius: 5px; /* Rounds the button corners */
+            transition: background-color 0.3s; /* Smooth background color transition */
         }
+
+        /* Hover effect for the button */
         a.button:hover {
-            background-color: #e67e22;
+            background-color: #e67e22; /* Darkens the button on hover */
         }
-                /* Footer Styles */
+
+        /* Footer Styles */
         footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            background-color: #2c3e50; /* Dark blue background color */
+            color: white; /* White text color */
+            text-align: center; /* Centers the text */
+            padding: 20px 0; /* Adds padding inside the footer */
+            position: relative; /* Relative positioning */
+            bottom: 0; /* Ensures the footer stays at the bottom */
+            width: 100%; /* Makes the footer span the full width of the page */
         }
 
+        /* Styling for links inside the footer */
         footer a {
-            color: #ecf0f1;
-            text-decoration: none;
-            margin: 0 10px;
+            color: #ecf0f1; /* Light gray text color */
+            text-decoration: none; /* Removes underline from links */
+            margin: 0 10px; /* Adds spacing between the links */
         }
 
+        /* Hover effect for footer links */
         footer a:hover {
-            text-decoration: underline;
+            text-decoration: underline; /* Underlines the link on hover */
         }
     </style>
 </head>
+
 <body>
+    <!-- Header section with navigation links -->
     <header>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="second-page.html">About Me</a>
-            <a href="Contact_info.html">Contact</a>
+            <a href="index.html">Home</a> <!-- Link to home page -->
+            <a href="second-page.html">About Me</a> <!-- Link to about me page -->
+            <a href="Contact_info.html">Contact</a> <!-- Link to contact page -->
         </nav>
     </header>
 
+    <!-- Main content section -->
     <section>
-        <h1>Welcome to My Website!</h1>
+        <h1>Welcome to My Website!</h1> <!-- Main heading -->
+
         <div class="intro">
-            <!-- Add your picture here -->
+            <!-- Image with a hover effect -->
             <img src="PhotoKiara.jpg" alt="kiarabrcic Image">
 
+            <!-- Introduction paragraphs -->
             <p>
                 Hi, my name is Kiara Brcic, and I'm a 20-year-old student at Northeastern University. I am currently studying Data Science and Business with a minor in Mathematics. One interesting fact about me is that I have a twin brother, who is also studying at Northeastern!
             </p>
-           
+
             <p>
                 I was born in Argentina, a country known for its passion for sports and vibrant culture. Seven years ago, my family and I moved to Mexico City, where they still live today. Despite the relocation, I stay closely connected with my roots by visiting Argentina at least twice a year. In addition to my twin brother, I also have a younger sister, and our close-knit family has always been a source of support and joy in my life.
             </p>
@@ -132,12 +167,12 @@
             <p>
                 This website is where I share my hobbies and interests. Feel free to explore more about my experiences, including my love for field hockey and my academic journey.
             </p>
-
         </div>
     </section>
 
+    <!-- Footer section -->
     <footer>
-        <p>&copy; 2024 Kiara | <a href="index.html">Home</a> | <a href="second-page.html">About Me</a> | <a href="Contact_info.html">Contact</a></p>
+        <p>&copy; 2024 Kiara | <a href="index.html">Home</a> | <a href="second-page.html">About Me</a> | <a href="Contact_info.html">Contact</a></p> <!-- Footer text and links -->
     </footer>
 </body>
 </html>
