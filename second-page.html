@@ -4,27 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Argentina and Field Hockey</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background-color: #2C3E50;
+            padding: 10px 0;
+            text-align: center;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        header nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        header nav a:hover {
+            color: #f39c12;
+        }
+        section {
+            padding-top: 60px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #2C3E50;
+            font-size: 30px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .images img {
+            max-width: 300px;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .images img:hover {
+            transform: scale(1.05);
+        }
+        .flag {
+            display: block;
+            margin: 0 auto;
+            max-width: 200px;
+            margin-top: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .flag:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: 50px;
+            padding: 10px;
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h2>About Me</h2>
-    <p>Hi, I'm from Argentina, a country known for its passion for sports, beautiful landscapes, and rich culture. Growing up in Argentina, I developed a deep love for sports, especially field hockey.</p>
-    
-    <p>Field hockey has been a significant part of my life for many years. Whether it's training, competing, or simply playing for fun, I enjoy every moment on the field. The sport has not only helped me stay active but has also taught me teamwork, strategy, and resilience.</p>
-    
-    <h3>Why I Love Field Hockey</h3>
-    <ul>
-        <li>It's a fast-paced and exciting sport.</li>
-        <li>It requires teamwork and strategy.</li>
-        <li>It's a great way to stay fit and active.</li>
-        <li>It has helped me meet amazing people and make lifelong friends.</li>
-    </ul>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="second-page.html">About Me</a>
+        </nav>
+    </header>
 
-    <p>Being from Argentina, where sports like football and field hockey are incredibly popular, has fueled my passion even more. I always look forward to the next game and the next challenge!</p>
+    <section>
+        <h2>About Me</h2>
+        <p>Hi, I'm from Argentina, a country known for its passion for sports, beautiful landscapes, and rich culture. Growing up in Argentina, I developed a deep love for sports, especially field hockey.</p>
+        <p>Field hockey has been a significant part of my life for many years. Whether it's training, competing, or simply playing for fun, I enjoy every moment on the field. The sport has not only helped me stay active but has also taught me teamwork, strategy, and resilience.</p>
+        
+        <h3>Why I Love Field Hockey</h3>
+        <ul>
+            <li>It's a fast-paced and exciting sport.</li>
+            <li>It requires teamwork and strategy.</li>
+            <li>It's a great way to stay fit and active.</li>
+            <li>It has helped me meet amazing people and make lifelong friends.</li>
+        </ul>
 
-    <img src="https://via.placeholder.com/400" alt="Playing Field Hockey" />
+        <!-- Hockey team and action photo -->
+        <div class="images">
+            <img src="TeamHockey.jpg" alt="Team Playing Hockey">
+            <img src="PlayingHockey.jpg" alt="Playing Field Hockey">
+        </div>
 
-    <nav>
-        <a href="index.html">Home</a>
-    </nav>
+        <!-- Argentina flag image -->
+        <img src="Flag-Argentina.jpg" alt="Flag of Argentina" class="flag">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Personal Website</p>
+    </footer>
 </body>
 </html>
